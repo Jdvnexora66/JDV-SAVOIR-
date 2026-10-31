@@ -27,6 +27,7 @@ The database currently reports the following applied migrations. Historical SQL 
 | 20261030054736 | index_education_catalogue_foreign_keys |
 | 20261031021603 | bookstore_and_paid_library |
 | 20261031064359 | index_remaining_catalogue_purchase_foreign_keys |
+| 20261031071006 | optimize_bookstore_and_entitlement_rls |
 
 ## Synchronization rule
 
