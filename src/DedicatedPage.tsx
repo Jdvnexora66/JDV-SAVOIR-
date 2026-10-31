@@ -1,4 +1,4 @@
-import{useState,useEffect}from'react';import{supabase}from'./supabase';import AdvancedPages from './AdvancedPages';import{Search,Filter,BookOpen,FileText,GraduationCap,Library,Download,ShoppingBag,UserRound,Settings,ShieldCheck,Clock,Bookmark,ChevronRight,LockKeyhole,Mail,Phone,MapPin,CalendarDays,CheckCircle2,AlertCircle}from'lucide-react';
+import{useState,useEffect}from'react';import{supabase}from'./supabase';import AdvancedPages from './AdvancedPages';import{ClipboardCheck,ChartNoAxesCombined,Search,Filter,BookOpen,FileText,GraduationCap,Library,Download,ShoppingBag,UserRound,Settings,ShieldCheck,Clock,Bookmark,ChevronRight,LockKeyhole,Mail,Phone,MapPin,CalendarDays,CheckCircle2,AlertCircle}from'lucide-react';
 type Props={page:string;search:string};
 const examTypes=['Tout','CEP','BEPC','BAC','Concours'];
 const resources=[{title:'Programme scolaire',kind:'Guide pédagogique',level:'Primaire',status:'Référence à vérifier'},{title:'Manuels et supports',kind:'Document pédagogique',level:'Collège',status:'Catalogue à connecter'},{title:'Mémoires et travaux',kind:'Document académique',level:'Supérieur',status:'Catalogue à connecter'}];
