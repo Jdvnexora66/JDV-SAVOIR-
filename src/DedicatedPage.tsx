@@ -17,7 +17,8 @@ function ExerciseCatalog(){const[items,setItems]=useState<any[]>([]);const[loadi
 
 export default function DedicatedPage({page,search}:Props){const[tab,setTab]=useState('Tout');const[q,setQ]=useState('');const[year,setYear]=useState('Toutes les années');const[showFilters,setShowFilters]=useState(false);const query=(search+' '+q).toLowerCase();
 if(window.location.hash.startsWith('#course-lesson-'))return <CourseDetail/>;
-if(page==='Exercices & Évaluations')return <ExerciseCatalog/>;\nif(page==='Examens & Concours')return <><Header title={page} subtitle="Retrouve les épreuves et concours par catégorie, année et matière." icon={GraduationCap}/><ResourceCatalog mode="exams"/></>;
+if(page==='Exercices & Évaluations')return <ExerciseCatalog/>;
+if(page==='Examens & Concours')return <><Header title={page} subtitle="Retrouve les épreuves et concours par catégorie, année et matière." icon={GraduationCap}/><ResourceCatalog mode="exams"/></>;
 if(page==='Cours & Formations')return <CoursesCatalog/>;
 if(page==='Annales & Corrigés')return <><Header title={page} subtitle="Archives d’épreuves, corrigés et supports de révision." icon={FileText}/><ResourceCatalog mode="annales"/></>;
 if(page==='Bibliothèque')return <><Header title={page} subtitle="Manuels, guides, livres et ressources documentaires." icon={Library}/><ResourceCatalog mode="resources"/></>;
