@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [main, audit/sync-ui-polish-2026-10-31]
+    branches: [main]
 
 jobs:
   build:
