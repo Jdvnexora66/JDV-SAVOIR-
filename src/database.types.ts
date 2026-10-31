@@ -1601,6 +1601,41 @@ export type Database = {
           },
         ]
       }
+      resource_downloads: {
+        Row: {
+          downloaded_at: string
+          id: string
+          resource_id: string | null
+          storage_path_snapshot: string
+          title_snapshot: string
+          user_id: string
+        }
+        Insert: {
+          downloaded_at?: string
+          id?: string
+          resource_id?: string | null
+          storage_path_snapshot: string
+          title_snapshot: string
+          user_id: string
+        }
+        Update: {
+          downloaded_at?: string
+          id?: string
+          resource_id?: string | null
+          storage_path_snapshot?: string
+          title_snapshot?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "resource_downloads_resource_id_fkey"
+            columns: ["resource_id"]
+            isOneToOne: false
+            referencedRelation: "academic_resources"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       resource_sources: {
         Row: {
           base_url: string
