@@ -131,3 +131,19 @@ tbody tr:last-child td{border-bottom:0}tbody tr:hover{background:#f8fbff}
 @media(max-width:1100px){.content{padding:22px 20px 8px}.sidebar{width:220px}main{margin-left:220px}.modules{grid-template-columns:repeat(2,minmax(0,1fr))}.dashboard-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.performance{grid-column:span 2}}
 @media(max-width:720px){.content{padding:14px 12px 8px}.hero{min-height:165px;padding:20px}.hero h1{font-size:23px}.hero p{font-size:13px}.page-heading h1{font-size:23px}.page-heading p{font-size:13px}.page-toolbar{align-items:stretch}.page-toolbar .local-search{flex-basis:100%;max-width:none}.feature-grid,.course-grid{grid-template-columns:1fr}.modules{grid-template-columns:1fr}.module-body{min-height:unset}.module-inner{padding:14px}.rowitem{font-size:13px}.rowitem small{font-size:11px}.panel{padding:16px}.stats{gap:10px}.stat{padding:14px}.stat small,.stat span{font-size:11px}.stat strong{font-size:19px}.subject b{font-size:12px}.subject small{font-size:10px}}
 @media(max-width:420px){.stats,.subjects{grid-template-columns:1fr}.hero-art{display:none}.page-icon{width:42px;height:42px}.page-heading{gap:12px}}
+
+/* Account settings and compact reading mode */
+.settings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.settings-card{display:grid;gap:18px}
+.settings-control{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 0;border-bottom:1px solid #edf2f8}
+.settings-control>span:first-child{display:grid;gap:4px;min-width:0}
+.settings-control b{font-size:14px;color:#1c3d6b}
+.settings-control small{font-size:12px;color:#7386a2;line-height:1.55}
+.settings-control input[type=checkbox]{width:20px;height:20px;accent-color:#176fe8;flex:0 0 auto}
+.settings-control .toolbar-select{min-width:130px}
+.jdv-compact .content{padding-top:18px}
+.jdv-compact .panel,.jdv-compact .table-card{padding:14px}
+.jdv-compact .resource-row{padding-top:9px;padding-bottom:9px}
+.jdv-compact tbody td{padding:9px 12px}
+.jdv-compact thead th{padding:10px 12px}
+@media(max-width:800px){.settings-grid{grid-template-columns:1fr}.settings-control{align-items:flex-start;flex-wrap:wrap}}
