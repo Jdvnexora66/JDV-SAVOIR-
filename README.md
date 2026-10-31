@@ -37,3 +37,11 @@ Les interfaces sont un socle de développement, pas une homologation fonctionnel
 5. Ancrer l’assistant IA sur les ressources accessibles
 6. Intégrer un fournisseur de paiement vérifié et les reçus
 7. Exécuter tests de build, sécurité, mobile et déploiement
+
+## Source de vérité et synchronisation (JDV Savoir+)
+- Dépôt GitHub dédié: `Jdvnexora66/JDV-SAVOIR-`; projet Supabase: `veqmwnobwteqyiottrmw` (`jdv-savoir-plus`, eu-west-1). Ne jamais utiliser le projet Supabase NEXORA pour cette application.
+- Le schéma Supabase est la référence d’exécution. Régénérer `src/database.types.ts` depuis le schéma après chaque migration et commiter le fichier avec la migration correspondante.
+- Toute modification de schéma doit être versionnée dans `supabase/migrations/`; comparer les versions GitHub et Supabase avant déploiement.
+- Les catalogues n’affichent que les ressources publiées et vérifiées. Les données d’exemple et libellés statiques ne doivent pas être présentés comme contenus disponibles.
+- Compteurs, catalogues, profils, achats et progressions doivent provenir de leurs tables/RPC Supabase autorisées. Les libellés UI restent du texte d’interface, pas des données métier.
+- Contrôles avant publication: `npm run typecheck`, `npm run build`, navigation/hash, RLS/security advisors, responsive mobile et comparaison des migrations.
