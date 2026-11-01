@@ -356,3 +356,16 @@ input:focus,select:focus,textarea:focus{border-color:#75a8f3;box-shadow:0 0 0 3p
 .auth-brand small,.auth-brand .eyebrow{color:#a9caff!important}
 .auth-trust{color:#e5efff!important}
 
+
+/* Pricing readability: strong contrast and a clear visual hierarchy */
+.subscription-pricing .price-card{color:#142b48;background:#fff;border:1px solid #cbd9eb;padding:24px;box-shadow:0 8px 24px rgba(17,48,88,.08)}
+.subscription-pricing .price-card h3{font-size:18px;color:#173b68;line-height:1.35}
+.subscription-pricing .price-card>strong{font-size:clamp(28px,2.5vw,36px);font-weight:900;letter-spacing:-.035em;line-height:1.15;color:#082f70;margin:14px 0 8px;display:block}
+.subscription-pricing .price-card .plan-duration{display:block;font-size:13px;font-weight:700;color:#425b7a;margin-bottom:12px}
+.subscription-pricing .price-card .tag{display:inline-flex;align-items:center;background:#e8f1ff;color:#174b91;border:1px solid #c9ddfb;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:800}
+.subscription-pricing .price-card.featured{border:2px solid #246bd0;background:linear-gradient(180deg,#f7fbff,#fff);box-shadow:0 12px 30px rgba(17,79,160,.15)}
+.subscription-pricing .price-card ul{font-size:13px;line-height:1.8;color:#344b68;padding-left:19px}
+.subscription-pricing .price-card .primary-btn{font-size:13px;font-weight:800;min-height:44px}
+.subscription-category-head h2{font-size:22px;color:#173b68}
+.subscription-category-head p{font-size:14px;color:#536b88}
+@media(max-width:720px){.subscription-pricing .price-card{padding:20px}.subscription-pricing .price-card>strong{font-size:30px}}
