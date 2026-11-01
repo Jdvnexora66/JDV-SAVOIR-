@@ -30,9 +30,12 @@ The database currently reports the following applied migrations. Historical SQL 
 | 20261031071006 | optimize_bookstore_and_entitlement_rls |
 | 20261031071216 | require_verified_publication_for_document_access |
 | 20261031071421 | create_resource_download_history |
+ fix/secure-download-history-2026-10-31
+=======
  audit/sync-ui-polish-2026-10-31
 =======
 | 20261031192306 | harden_document_purchase_rpc |
+ main
  main
 
 ## Synchronization rule
