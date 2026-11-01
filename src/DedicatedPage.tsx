@@ -1,4 +1,4 @@
-import{useState,useEffect}from'react';import{supabase}from'./supabase';import AdvancedPages from './AdvancedPages';import{ClipboardCheck,ChartNoAxesCombined,Search,Filter,BookOpen,FileText,GraduationCap,Library,Download,ShoppingBag,UserRound,Settings,ShieldCheck,Clock,Bookmark,ChevronRight,LockKeyhole,Mail,Phone,MapPin,CalendarDays,CheckCircle2,AlertCircle}from'lucide-react';
+import{useState,useEffect}from'react';import{supabase}from'./supabase';import AdvancedPages from './AdvancedPages';import KnowledgeWorkspace from './KnowledgeWorkspace';import{ClipboardCheck,ChartNoAxesCombined,Search,Filter,BookOpen,FileText,GraduationCap,Library,Download,ShoppingBag,UserRound,Settings,ShieldCheck,Clock,Bookmark,ChevronRight,LockKeyhole,Mail,Phone,MapPin,CalendarDays,CheckCircle2,AlertCircle}from'lucide-react';
 type Props={page:string;search:string};
 const examTypes=['Tout','CEP','BEPC','BAC','Concours'];
 const resources=[{title:'Programme scolaire',kind:'Guide pédagogique',level:'Primaire',status:'Référence à vérifier'},{title:'Manuels et supports',kind:'Document pédagogique',level:'Collège',status:'Catalogue à connecter'},{title:'Mémoires et travaux',kind:'Document académique',level:'Supérieur',status:'Catalogue à connecter'}];
@@ -36,6 +36,8 @@ if(window.location.hash.startsWith('#exercise-'))return <ExerciseDetail/>;
 if(page==='Exercices & Évaluations')return <ExerciseCatalog/>;
 if(page==='Examens & Concours')return <><Header title={page} subtitle="Retrouve les épreuves et concours par catégorie, année et matière." icon={GraduationCap}/><ResourceCatalog mode="exams"/></>;
 if(page==='Cours & Formations')return <CoursesCatalog/>;
+if(page==='Assistant IA')return <KnowledgeWorkspace mode='assistant'/>;
+if(page==='Sources & documents'||page==='Lecteur PDF')return <KnowledgeWorkspace mode='library'/>;
 if(page==='Résultats')return <ResultsHistoryPage/>;
 if(page==='Annales & Corrigés')return <><Header title={page} subtitle="Archives d’épreuves, corrigés et supports de révision." icon={FileText}/><ResourceCatalog mode="annales"/></>;
 if(page==='Bibliothèque')return <BookstorePage/>;
