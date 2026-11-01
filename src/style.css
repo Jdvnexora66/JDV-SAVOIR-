@@ -337,3 +337,20 @@ input:focus,select:focus,textarea:focus{border-color:#75a8f3;box-shadow:0 0 0 3p
 .lesson-block h3{margin:0 0 13px;color:#1e3f70;font-size:16px;line-height:1.5}
 .lesson-block p{color:#657b98;line-height:1.7}
 @media(max-width:720px){.lesson-block{padding:14px;margin:13px 0}.exercise-option{padding:11px 12px}}
+ integration/lot4-exercices-main-2026-10-31
+=======
+
+.attempt-review{flex:1 0 100%;margin:8px 0 0;padding:15px 17px;border-radius:12px;background:#f6f9fe;border:1px solid #e2ebf8;color:#536d8e;line-height:1.7}
+.attempt-review>b{display:block;color:#23466f;margin-bottom:8px}
+.attempt-review p{margin:5px 0;font-size:12px;overflow-wrap:anywhere}
+.attempt-review p span{font-weight:700;color:#315b91}
+@media(max-width:720px){.attempt-review{padding:12px}}
+
+
+/* Auth landing panel: enforce readable contrast over the navy background. */
+.auth-brand h1{color:#f8fbff!important;text-shadow:0 1px 1px #061a3b35}
+.auth-brand h1 em{color:#ffd43b!important}
+.auth-brand p{color:#e5efff!important}
+.auth-brand small,.auth-brand .eyebrow{color:#a9caff!important}
+.auth-trust{color:#e5efff!important}
+ main
