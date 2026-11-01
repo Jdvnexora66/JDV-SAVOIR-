@@ -109,6 +109,8 @@ button,a,input,select,textarea{touch-action:manipulation}
 .stats{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:900px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.stats{grid-template-columns:1fr}}
+ audit/sync-ui-polish-2026-10-31
+=======
 
 /* Modern readability layer */
 :root{--jdv-space:1rem;--jdv-border:#dce6f2;--jdv-text:#18345f}
@@ -353,4 +355,5 @@ input:focus,select:focus,textarea:focus{border-color:#75a8f3;box-shadow:0 0 0 3p
 .auth-brand p{color:#e5efff!important}
 .auth-brand small,.auth-brand .eyebrow{color:#a9caff!important}
 .auth-trust{color:#e5efff!important}
+ main
  main
