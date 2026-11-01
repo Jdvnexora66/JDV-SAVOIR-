@@ -1,4 +1,5 @@
-import{useState,useEffect}from'react';import{supabase}from'./supabase';import AdvancedPages from './AdvancedPages';import KnowledgeWorkspace from './KnowledgeWorkspace';import ExamPackCatalog from './ExamPackCatalog';import{ClipboardCheck,ChartNoAxesCombined,Search,Filter,BookOpen,FileText,GraduationCap,Library,Download,ShoppingBag,UserRound,Settings,ShieldCheck,Clock,Bookmark,ChevronRight,LockKeyhole,Mail,Phone,MapPin,CalendarDays,CheckCircle2,AlertCircle}from'lucide-react';
+import{useState,useEffect}from'react';import{supabase}from'./supabase';import AdvancedPages from './AdvancedPages';import KnowledgeWorkspace from './KnowledgeWorkspace';import ExamPackCatalog from './ExamPackCatalog';
+import BulkPdfImporter from './BulkPdfImporter';import{ClipboardCheck,ChartNoAxesCombined,Search,Filter,BookOpen,FileText,GraduationCap,Library,Download,ShoppingBag,UserRound,Settings,ShieldCheck,Clock,Bookmark,ChevronRight,LockKeyhole,Mail,Phone,MapPin,CalendarDays,CheckCircle2,AlertCircle}from'lucide-react';
 type Props={page:string;search:string};
 const examTypes=['Tout','CEP','BEPC','BAC','Concours'];
 const resources=[{title:'Programme scolaire',kind:'Guide pédagogique',level:'Primaire',status:'Référence à vérifier'},{title:'Manuels et supports',kind:'Document pédagogique',level:'Collège',status:'Catalogue à connecter'},{title:'Mémoires et travaux',kind:'Document académique',level:'Supérieur',status:'Catalogue à connecter'}];
@@ -31,6 +32,7 @@ function ResultsHistoryPage(){const[rows,setRows]=useState<any[]>([]);const[load
 export default function DedicatedPage({page,search}:Props){const[tab,setTab]=useState('Tout');const[q,setQ]=useState('');const[year,setYear]=useState('Toutes les années');const[showFilters,setShowFilters]=useState(false);const query=(search+' '+q).toLowerCase();
 if(window.location.hash.startsWith('#course-lesson-'))return <CourseDetail/>;
 if(page==='Mon parcours')return <LearningPathPage/>;
+if(page==='Administration')return <BulkPdfImporter/>;
 if(window.location.hash.startsWith('#exercise-'))return <ExerciseDetail/>;
 if(page==='Exercices & Évaluations')return <ExerciseCatalog/>;
 if(page==='Examens & Concours')return <ExamPackCatalog mode="exams"/>;
