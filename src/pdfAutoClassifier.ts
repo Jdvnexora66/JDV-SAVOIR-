@@ -1,4 +1,5 @@
-import * as pdfjsLib from 'pdfjs-dist';\n(pdfjsLib as any).GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.mjs', import.meta.url).toString();
+import * as pdfjsLib from 'pdfjs-dist';
+(pdfjsLib as any).GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.mjs', import.meta.url).toString();
 
 export type Classification = { title:string; level:string; year:string; subject:string; kind:string; confidence:number; reasons:string[]; review:boolean; extractedChars:number };
 const LEVELS=['CM2','CM1','CE2','CE1','CP','CI','6e','5e','4e','3e','Seconde','Première','Terminale','Université'];
