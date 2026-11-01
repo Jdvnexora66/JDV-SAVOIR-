@@ -1,5 +1,4 @@
 import{useState,useEffect}from'react';import{supabase}from'./supabase';import{Library}from'lucide-react';import{BookOpen,FileText,GraduationCap,UserRound,LockKeyhole,Mail,ArrowRight,ShieldCheck,Users,ChartNoAxesCombined,ClipboardCheck,BrainCircuit,Search,Download,PlayCircle,CheckCircle2,AlertCircle,Settings,FolderOpen,BookMarked,MessageCircle,CreditCard,Smartphone,Eye,EyeOff}from'lucide-react';
- main
 function EmptyState({title,body}:{title:string;body:string}){return <div className="empty-state"><div className="empty-icon"><AlertCircle/></div><b>{title}</b><p>{body}</p></div>}
 function Head({title,sub,icon:Icon}:{title:string;sub:string;icon:any}){return <div className="page-heading"><div className="page-icon"><Icon/></div><div><h1>{title}</h1><p>{sub}</p></div></div>}
 function Pending({title,desc}:{title:string;desc:string}){return <div className="pending-card"><div className="pending-icon"><AlertCircle/></div><h3>{title}</h3><p>{desc}</p><span>Interface prête · connexion métier à finaliser</span></div>}
