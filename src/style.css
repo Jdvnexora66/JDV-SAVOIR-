@@ -343,3 +343,11 @@ input:focus,select:focus,textarea:focus{border-color:#75a8f3;box-shadow:0 0 0 3p
 .attempt-review p{margin:5px 0;font-size:12px;overflow-wrap:anywhere}
 .attempt-review p span{font-weight:700;color:#315b91}
 @media(max-width:720px){.attempt-review{padding:12px}}
+
+
+/* Auth landing panel: enforce readable contrast over the navy background. */
+.auth-brand h1{color:#f8fbff!important;text-shadow:0 1px 1px #061a3b35}
+.auth-brand h1 em{color:#ffd43b!important}
+.auth-brand p{color:#e5efff!important}
+.auth-brand small,.auth-brand .eyebrow{color:#a9caff!important}
+.auth-trust{color:#e5efff!important}
