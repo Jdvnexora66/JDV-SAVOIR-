@@ -6,9 +6,16 @@
 
 | Source | Usage | Statut |
 |---|---|---|
-| MEMP — https://memp.gouv.bj/ | Programmes, communiqués, documents officiels du primaire | Source institutionnelle; identifier les PDF de programmes CM2 exacts |
-| INFRE — https://infre-benin.org/recherche-education.html | Programmes/méthodes, ressources d'évaluation standardisées | Ressources d'épreuves standardisées CM2 repérées; vérifier le millésime et les droits avant import |
+| MEMP — https://memp.gouv.bj/ | Programmes, communiqués, documents officiels du primaire | Source institutionnelle; la page de publications doit être explorée pour les programmes CM2 exacts |
+| INFRE — https://infre-benin.org/recherche-education.html | Programmes/méthodes, ressources d'évaluation standardisées | Ressources CM2 publiées sur la page officielle; fichier direct repéré ci-dessous |
 | Gouvernement du Bénin — https://www.gouv.bj/ | Communiqués officiels et calendrier CEP | Référence institutionnelle pour dates/organisation |
+
+### Ressource CM2 directement repérée sur INFRE
+
+- **Épreuves EST CM2 — version définitive** (document PDF indiqué à 522,3 Ko sur la page INFRE).
+- Lien de téléchargement indiqué par la page : https://infre-benin.org/recherche-education.html?file=files%2FINFRE%2FEpr%C3%A9uves-standardisees%2FCM1-CM2%2FEpreuves+EST+CM2++Version+d%C3%A9finitive.pdf
+- **Corrigé-types des épreuves standardisées** (PDF indiqué à 743,3 Ko) : https://infre-benin.org/recherche-education.html?file=files%2FINFRE%2FEpr%C3%A9uves-standardisees%2FCM1-CM2%2FCorrig%C3%A9-types+%C3%A9preuves+standardis%C3%A9es+DV.pdf
+- État : liens présents sur le site institutionnel; téléchargement/import dans Supabase non confirmé. Vérifier contenu et conditions d'utilisation avant republication.
 
 ## Pistes d'épreuves CEP
 
