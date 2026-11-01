@@ -1,4 +1,3 @@
-import{useState,useEffect}from'react';import{supabase}from'./supabase';import{Library}from'lucide-react';import{BookOpen,FileText,GraduationCap,UserRound,LockKeyhole,Mail,ArrowRight,ShieldCheck,Users,ChartNoAxesCombined,ClipboardCheck,BrainCircuit,Search,Download,PlayCircle,CheckCircle2,AlertCircle,Settings,FolderOpen,BookMarked,MessageCircle,CreditCard,Smartphone}from'lucide-react';
 import{useState,useEffect}from'react';import{supabase}from'./supabase';import{Library}from'lucide-react';import{BookOpen,FileText,GraduationCap,UserRound,LockKeyhole,Mail,ArrowRight,ShieldCheck,Users,ChartNoAxesCombined,ClipboardCheck,BrainCircuit,Search,Download,PlayCircle,CheckCircle2,AlertCircle,Settings,FolderOpen,BookMarked,MessageCircle,CreditCard,Smartphone,Eye,EyeOff}from'lucide-react';
  main
 function EmptyState({title,body}:{title:string;body:string}){return <div className="empty-state"><div className="empty-icon"><AlertCircle/></div><b>{title}</b><p>{body}</p></div>}
